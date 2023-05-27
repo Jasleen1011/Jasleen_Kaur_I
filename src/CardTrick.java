@@ -59,15 +59,7 @@ public class CardTrick {
               System.out.println("Oops! Your card is not present in the magic hand") ;
           }
       }
-       
-        
-      
-      
-       
-       
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+    
         /* Results:
 Please enter the value between 1 and 13 = 
 3
