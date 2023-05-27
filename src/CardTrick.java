@@ -11,7 +11,8 @@ import java.util.Scanner;
  * A class that fills a magic hand of 7 cards with random Card Objects
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
- * @author Jasleen1011
+ * @author Jasleen
+ * @since  27 May 2023
  */
 public class CardTrick {
 
@@ -42,20 +43,20 @@ public class CardTrick {
        createdCard.setValue(value);
        createdCard.setSuit(suit);
        // and search magicHand here
-        boolean found
-                = false;
+        boolean found= false;
+                
       for(Card card : magicHand){
           if (card.getValue()== createdCard.getValue()) {
                 if (card.getSuit().equals(createdCard.getSuit())) {
                 } else {
-                    break;
+                   
               }
             }
           if(found){
               System.out.println("Yay! Your card is present in the magic Hand ");
           }
           else{
-              System.out.println("Oops! Your card id not present in the magic hand") ;
+              System.out.println("Oops! Your card is not present in the magic hand") ;
           }
       }
        
@@ -69,17 +70,16 @@ public class CardTrick {
         //Then report the result here
         /* Results:
 Please enter the value between 1 and 13 = 
-4
+3
 Now please enter the suit("Hearts", "Diamonds", "Spades", "Clubs") = 
-Diamonds
-Oops! Your card id not present in the magic hand
-Oops! Your card id not present in the magic hand
-Oops! Your card id not present in the magic hand
-Oops! Your card id not present in the magic hand
-Oops! Your card id not present in the magic hand
-Oops! Your card id not present in the magic hand
-Oops! Your card id not present in the magic hand
-        */
+Hearts
+Oops! Your card is not present in the magic hand
+Oops! Your card is not present in the magic hand
+Oops! Your card is not present in the magic hand
+Oops! Your card is not present in the magic hand
+Oops! Your card is not present in the magic hand
+Oops! Your card is not present in the magic hand
+Oops! Your card is not present in the magic hand
     }
     
 }
